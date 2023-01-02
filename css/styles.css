@@ -73,6 +73,8 @@ body {
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -188,6 +190,7 @@ body {
   color: var(--text-bacground-color);
   background-color: var(--first-background-color-button);
   cursor: pointer;
+  background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -196,10 +199,14 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--second-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:active {
   background-color: var(--second-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .btn {
@@ -220,15 +227,6 @@ body {
 .features-iteam {
   width: calc((100% - 72px) / 4);
 }
-
-/* .features-iteam::before {
-  content: "";
-  display: block;
-  height: 112px;
-  background-repeat: no-repeat;
-  background-color: #f4f4fd;
-  background-position: center;
-} */
 
 .features-title {
   font-size: 20px;
@@ -306,6 +304,9 @@ body {
 .team-item {
   background-color: var(--text-bacground-color);
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
   font-size: 20px;
@@ -378,9 +379,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid var(--icons-customer-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   fill: var(--icons-customer-color);
 }
 
@@ -396,8 +396,6 @@ body {
   background-color: var(--typical-backgroud-color);
   padding-bottom: 100px;
   padding-top: 100px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -432,10 +430,10 @@ body {
   max-width: 208px;
   height: 80px;
 }
-.footer-soc-title {
+.footer-soc-media {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-bacground-color);
   margin-bottom: 16px;
@@ -457,8 +455,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  /*colore temporaneo*/
-  background-color: var(--second-heder-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-icon {
@@ -495,6 +492,12 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.filter-list-img .filter-item:hover,
+.filter-list-img .filter-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -516,6 +519,9 @@ body {
 .filter-button:focus {
   color: var(--text-bacground-color);
   background-color: var(--first-background-color-button);
+  border: 1px solid var(--first-background-color-button);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-title {
